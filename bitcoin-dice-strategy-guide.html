@@ -36,10 +36,29 @@
 <div class="wrap breadcrumb"><a href="/">Home</a> / Strategy Guide</div>
 
 <section class="hero" style="padding:56px 0 48px">
-  <div class="wrap" style="position:relative">
-    <span class="eyebrow">Full guide</span>
-    <h1>Bitcoin dice <span>strategy</span> guide</h1>
-    <p class="lede">Dice strategy on crypto casinos comes down to three variables: house edge, bet sizing, and how you react to variance. Here's how each one actually works.</p>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Full guide</span>
+        <h1>Bitcoin dice <span>strategy</span> guide</h1>
+        <p class="lede">Dice strategy on crypto casinos comes down to three variables: house edge, bet sizing, and how you react to variance. Here's how each one actually works.</p>
+      </div>
+      <div class="hero-visual" style="width:200px">
+        <svg class="die-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <g class="die-a">
+            <rect x="15" y="55" width="130" height="130" rx="18" fill="#12161F" stroke="#D9A63C" stroke-width="3"/>
+            <circle cx="50" cy="90" r="7" fill="#D9A63C"/>
+            <circle cx="115" cy="90" r="7" fill="#D9A63C"/>
+            <circle cx="50" cy="150" r="7" fill="#D9A63C"/>
+            <circle cx="115" cy="150" r="7" fill="#D9A63C"/>
+          </g>
+          <g class="die-b">
+            <rect x="95" y="10" width="70" height="70" rx="12" fill="#12161F" stroke="#00C2A8" stroke-width="2.5"/>
+            <circle cx="130" cy="45" r="5" fill="#00C2A8"/>
+          </g>
+        </svg>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -47,6 +66,24 @@
   <div class="wrap" style="max-width:760px">
     <h2>How the house edge works in bitcoin dice</h2>
     <p style="color:var(--muted);margin-bottom:16px">In a typical crypto dice game you pick a target number and a roll-under or roll-over condition. The payout multiplier is set so the platform keeps a fixed edge — commonly around 1% — regardless of which number you choose. This is the single fact every dice strategy has to work around: no progression system removes that edge, it only reshapes the pattern of wins and losses along the way.</p>
+
+    <figure class="figure">
+      <svg viewBox="0 0 480 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="30" y1="20" x2="30" y2="130" stroke="#232838" stroke-width="1"/>
+        <line x1="30" y1="130" x2="450" y2="130" stroke="#232838" stroke-width="1"/>
+        <rect x="70" y="34" width="60" height="96" rx="4" fill="#D9A63C"/>
+        <text x="100" y="26" fill="#8B92A0" font-size="11" text-anchor="middle" font-family="Inter, sans-serif">49.5%</text>
+        <text x="100" y="146" fill="#8B92A0" font-size="11" text-anchor="middle" font-family="Inter, sans-serif">You win</text>
+        <rect x="180" y="30" width="60" height="100" rx="4" fill="#00C2A8"/>
+        <text x="210" y="22" fill="#8B92A0" font-size="11" text-anchor="middle" font-family="Inter, sans-serif">50.5%</text>
+        <text x="210" y="146" fill="#8B92A0" font-size="11" text-anchor="middle" font-family="Inter, sans-serif">You lose</text>
+        <rect x="300" y="122" width="60" height="8" rx="4" fill="#EDEEF0" opacity=".9"/>
+        <text x="330" y="112" fill="#EDEEF0" font-size="11" text-anchor="middle" font-family="Inter, sans-serif">≈1% house edge</text>
+        <text x="330" y="146" fill="#8B92A0" font-size="11" text-anchor="middle" font-family="Inter, sans-serif">the gap between them</text>
+      </svg>
+      <figcaption>Illustrative example only — the exact win/loss split depends on your chosen target number and the platform's stated edge.</figcaption>
+    </figure>
+
     <p style="color:var(--muted);margin-bottom:16px">Provably fair dice games let you verify each roll against a server seed and client seed, so the outcome isn't manipulated bet-by-bet. That's a fairness guarantee, not a strategy — it just confirms the edge you're playing against is the one advertised.</p>
   </div>
 </section>
@@ -85,6 +122,53 @@
       <li>Set a session win target and a session stop-loss, and close the tab when you hit either.</li>
       <li>Track results across sessions. A strategy that "feels" good after one lucky night isn't validated by a single sample.</li>
     </ul>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap" style="max-width:760px">
+    <div class="kicker">Where it's played</div>
+    <h2>Platforms that run dice as a core game</h2>
+    <p style="color:var(--muted);margin-bottom:8px">Dice shows up across most crypto casinos, but the game gets more attention — better bet limits, a dedicated interface, sometimes its own stats tools — on platforms that treat it as a flagship product rather than a filler game. A few worth knowing:</p>
+
+    <div class="platform-row">
+      <div class="platform-badge">St</div>
+      <div>
+        <h3>Stake</h3>
+        <p>One of the largest crypto casinos overall; dice is one of its original, most-played provably fair games, with a simple roll-under/over interface.</p>
+      </div>
+    </div>
+    <div class="platform-row">
+      <div class="platform-badge">BC</div>
+      <div>
+        <h3>BC.Game</h3>
+        <p>Runs its own dice variant alongside a large game library, with community-driven features like public bet feeds and seed-verification tools.</p>
+      </div>
+    </div>
+    <div class="platform-row">
+      <div class="platform-badge">Ro</div>
+      <div>
+        <h3>Roobet</h3>
+        <p>Crypto-first casino with a straightforward dice game and its own provably fair verification page.</p>
+      </div>
+    </div>
+    <div class="platform-row">
+      <div class="platform-badge">pg</div>
+      <div>
+        <h3>plg.bet</h3>
+        <p>A crypto casino offering dice alongside its other game types, with live support for account and payout questions.</p>
+        <span class="tag">Crypto dice &amp; casino</span>
+      </div>
+    </div>
+    <div class="platform-row">
+      <div class="platform-badge">DD</div>
+      <div>
+        <h3>DuckDice</h3>
+        <p>A dice-focused platform built specifically around the game, with faucets and a leveling system layered on top of standard dice betting.</p>
+      </div>
+    </div>
+
+    <p style="color:var(--muted);margin-top:20px;font-size:.9rem">This is an overview, not a ranking — the house edge and bankroll math above apply the same way regardless of which platform you use. Always check a platform's current terms, licensing, and availability in your jurisdiction before depositing.</p>
   </div>
 </section>
 
